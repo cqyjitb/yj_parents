@@ -1,8 +1,8 @@
 package com.yj.core.user.service.impl;
 
 import com.yj.api.service.IUserService;
-import com.yj.core.user.dto.User;
 import com.yj.core.user.mapper.UserMapper;
+import com.yj.utils.JsonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +17,7 @@ public class UserServiceImpl implements IUserService {
         if (userMapper.getUserInfo(username) == null ){
             return "";
         }else{
-            return userMapper.getUserInfo(username).toString();
+            return JsonUtil.getJson(userMapper.getUserInfo(username));
         }
     }
 }
