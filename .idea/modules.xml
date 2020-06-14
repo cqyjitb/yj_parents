@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/yj_api_service/api_core_service/api_core_service.iml" filepath="$PROJECT_DIR$/yj_api_service/api_core_service/api_core_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yj_api_service/api_member_service/api_member_service.iml" filepath="$PROJECT_DIR$/yj_api_service/api_member_service/api_member_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yj_api_core_service_impl/yj_api_core_service_impl.iml" filepath="$PROJECT_DIR$/yj_api_core_service_impl/yj_api_core_service_impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yj_api_member_service_impl/yj_api_member_service_impl.iml" filepath="$PROJECT_DIR$/yj_api_member_service_impl/yj_api_member_service_impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yj_api_service/yj_api_service.iml" filepath="$PROJECT_DIR$/yj_api_service/yj_api_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yj_common/yj_common.iml" filepath="$PROJECT_DIR$/yj_common/yj_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yj_parents.iml" filepath="$PROJECT_DIR$/yj_parents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yj_ui/yj_ui.iml" filepath="$PROJECT_DIR$/yj_ui/yj_ui.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,8 +1,8 @@
 package com.yj.core.user.service.impl;
 
+import com.yj.api.service.IUserService;
 import com.yj.core.user.dto.User;
 import com.yj.core.user.mapper.UserMapper;
-import com.yj.core.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,12 @@ public class UserServiceImpl implements IUserService {
     private UserMapper userMapper;
 
     @Override
-    public User getUserInfo(String username) {
-        return userMapper.getUserInfo(username);
+    public String getUserInfo(String username) {
+
+        if (userMapper.getUserInfo(username) == null ){
+            return "";
+        }else{
+            return userMapper.getUserInfo(username).toString();
+        }
     }
 }
