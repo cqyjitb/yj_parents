@@ -1,0 +1,50 @@
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8200/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+spring:
+  jta:
+    atomikos:
+      properties:
+        log-base-name: yj_parents_atomiks_core
+  datasource:
+    dbcore:
+      url: jdbc:mysql://localhost:3306/yj_cloud_2.0
+      user: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
+      maxLifeTime: 20000
+      maxPoolSize: 25
+      minPoolSize: 3
+      uniqueResourceName: dbcoreDatasource
+
+    dbslave:
+      url: jdbc:mysql://localhost:3306/yj_302_1_CJ
+      user: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
+      maxLifeTime: 20000
+      maxPoolSize: 25
+      minPoolSize: 3
+      uniqueResourceName: dbslaveDatasource
+  application:
+    name: app-yj-core
+#springcloud feign 默认开启支持ribbon
+ribbon:
+  ReadTimeout:  5000
+  ConnectTimeout: 5000
+feign:
+  hystrix:
+    enabled: true
