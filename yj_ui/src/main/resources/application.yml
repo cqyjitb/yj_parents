@@ -18,6 +18,7 @@ spring:
     encoding: utf-8
     prefix: classpath:/templates/
     suffix: .html
+    cache: false
   application:
     name: app-yj-ui
 #ribbon:
