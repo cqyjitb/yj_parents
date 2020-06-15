@@ -1,12 +1,16 @@
 server:
   port: 8000
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8200/eureka/
-    register-with-eureka: true
-    fetch-registry: true
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8200/eureka/
+#    register-with-eureka: true
+#    fetch-registry: true
 spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
   jta:
     atomikos:
       properties:

@@ -1,15 +1,19 @@
 server:
   port: 8080
-eureka:
-  instance:
-    lease-renewal-interval-in-seconds: 4 #每隔这个时间会主动心跳一次 默认值为30s，更新自己的状态
-    lease-expiration-duration-in-seconds: 12 #设置服务过期时间配置,超过这个时间没有接收到心跳EurekaServer就会将这个实例剔除
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8200/eureka/
-    register-with-eureka: true
-    fetch-registry: true
+#eureka:
+#  instance:
+#    lease-renewal-interval-in-seconds: 4 #每隔这个时间会主动心跳一次 默认值为30s，更新自己的状态
+#    lease-expiration-duration-in-seconds: 12 #设置服务过期时间配置,超过这个时间没有接收到心跳EurekaServer就会将这个实例剔除
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8200/eureka/
+#    register-with-eureka: true
+#    fetch-registry: true
 spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
   thymeleaf:
     encoding: utf-8
     prefix: classpath:/templates/
