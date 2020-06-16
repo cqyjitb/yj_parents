@@ -1,9 +1,43 @@
+---
 server:
   port: 7000
 spring:
+  profiles: peer1
   application:
     name: api-gateway
   cloud:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+    gateway:
+      routes:
+      - id: yj_api_core
+        uri: http://127.0.0.1:9000
+        predicates:
+        - Path=/test/**
+      discovery:
+        locator:
+          enabled: true
+
+#----------------------------------------
+---
+server:
+  port: 7001
+spring:
+  profiles: peer2
+  application:
+    name: api-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes:
+      - id: yj_api_core
+        uri: http://127.0.0.1:9000
+        predicates:
+        - Path=/test/**
+      discovery:
+        locator:
+          enabled: true
+

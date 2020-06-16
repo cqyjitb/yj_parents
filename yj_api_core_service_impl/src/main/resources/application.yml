@@ -1,15 +1,8 @@
+---
 server:
   port: 9000
-#eureka:
-#  instance:
-#    lease-renewal-interval-in-seconds: 4 #每隔这个时间会主动心跳一次 默认值为30s，更新自己的状态
-#    lease-expiration-duration-in-seconds: 12 #设置服务过期时间配置,超过这个时间没有接收到心跳EurekaServer就会将这个实例剔除
-#  client:
-#    service-url:
-#      defaultZone: http://127.0.0.1:8200/eureka/
-#    register-with-eureka: true
-#    fetch-registry: true
 spring:
+  profiles: peer1
   cloud:
     nacos:
       discovery:
@@ -17,7 +10,58 @@ spring:
   jta:
     atomikos:
       properties:
-        log-base-name: yj_parents_atomiks_core
+        log-base-name: yj_parents_atomiks_core1
+  datasource:
+    dbcore:
+      url: jdbc:mysql://localhost:3306/yj_cloud_2.0
+      user: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
+      maxLifeTime: 20000
+      maxPoolSize: 25
+      minPoolSize: 3
+      uniqueResourceName: dbcoreDatasource
+
+    dbslave:
+      url: jdbc:mysql://localhost:3306/yj_302_1_CJ
+      user: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
+      maxLifeTime: 20000
+      maxPoolSize: 25
+      minPoolSize: 3
+      uniqueResourceName: dbslaveDatasource
+  application:
+    name: app-yj-core
+#springcloud feign 默认开启支持ribbon
+ribbon:
+  ReadTimeout:  5000
+  ConnectTimeout: 5000
+feign:
+  hystrix:
+    enabled: true
+
+---
+server:
+  port: 9001
+spring:
+  profiles: peer2
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  jta:
+    atomikos:
+      properties:
+        log-base-name: yj_parents_atomiks_core2
   datasource:
     dbcore:
       url: jdbc:mysql://localhost:3306/yj_cloud_2.0
