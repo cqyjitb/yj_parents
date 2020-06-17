@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/yj_api_service/api_core_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_api_service/api_member_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yj_gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_ui" charset="UTF-8" />
   </component>
 </project>

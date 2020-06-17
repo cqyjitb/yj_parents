@@ -12,6 +12,7 @@
         <module name="yj_api_core_service_impl" />
         <module name="yj_api_member_service_impl" />
         <module name="yj_common" />
+        <module name="yj_gateway" />
         <module name="yj_ui" />
       </profile>
     </annotationProcessing>
@@ -24,6 +25,7 @@
       <module name="yj_api_member_service_impl" target="1.8" />
       <module name="yj_api_service" target="1.8" />
       <module name="yj_common" target="1.8" />
+      <module name="yj_gateway" target="1.8" />
       <module name="yj_parents" target="1.8" />
       <module name="yj_ui" target="1.8" />
     </bytecodeTargetLevel>

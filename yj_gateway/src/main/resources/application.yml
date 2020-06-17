@@ -11,13 +11,19 @@ spring:
         server-addr: 127.0.0.1:8848
     gateway:
       routes:
-      - id: yj_api_core
-        uri: http://127.0.0.1:9000
+      - id: app-yj-core
+        uri: lb://app-yj-core
         predicates:
-        - Path=/test/**
+        - Path=/app-yj-core/**
+      - id: app-yj-member
+        uri: lb://app-yj-member
+        predicates:
+        - Path=/app-yj-member/**
+      #开启服务名发现，根据服务名转发，实现负载均衡
       discovery:
         locator:
           enabled: true
+
 
 #----------------------------------------
 ---
@@ -33,10 +39,14 @@ spring:
         server-addr: 127.0.0.1:8848
     gateway:
       routes:
-      - id: yj_api_core
-        uri: http://127.0.0.1:9000
+      - id: app-yj-core
+        uri: lb://app-yj-core
         predicates:
-        - Path=/test/**
+        - Path=/app-yj-core/**
+      - id: app-yj-member
+        uri: lb://app-yj-member
+        predicates:
+        - Path=/app-yj-member/**
       discovery:
         locator:
           enabled: true

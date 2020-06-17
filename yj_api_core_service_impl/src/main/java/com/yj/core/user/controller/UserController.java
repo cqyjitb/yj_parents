@@ -33,13 +33,18 @@ public class UserController {
 
     @ApiOperation(value = "计算+", notes = "加法")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "a", paramType = "path", value = "数字a", required = true, dataType = "Long"),
-            @ApiImplicitParam(name = "b", paramType = "path", value = "数字b", required = true, dataType = "Long")
+            @ApiImplicitParam(name = "a", paramType = "path", value = "数字a", required = true, dataType = "long",example = "1"),
+            @ApiImplicitParam(name = "b", paramType = "path", value = "数字b", required = true, dataType = "long",example = "1")
     })
     @RequestMapping(value = "/test/{a}/{b}",method = {RequestMethod.GET})
     public Integer get(@PathVariable Integer a, @PathVariable Integer b) {
         return a + b;
     }
 
+    @ApiOperation(value = "获取端口",notes = "获取服务所在端口")
+    @RequestMapping(value = "/getPort",method = {RequestMethod.GET})
+    public String getPort(){
 
+        return "这是端口："+ port;
+    }
 }

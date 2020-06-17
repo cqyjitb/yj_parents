@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/yj_api_member_service_impl/yj_api_member_service_impl.iml" filepath="$PROJECT_DIR$/yj_api_member_service_impl/yj_api_member_service_impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_api_service/yj_api_service.iml" filepath="$PROJECT_DIR$/yj_api_service/yj_api_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_common/yj_common.iml" filepath="$PROJECT_DIR$/yj_common/yj_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yj_gateway/yj_gateway.iml" filepath="$PROJECT_DIR$/yj_gateway/yj_gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_parents.iml" filepath="$PROJECT_DIR$/yj_parents.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_ui/yj_ui.iml" filepath="$PROJECT_DIR$/yj_ui/yj_ui.iml" />
     </modules>
