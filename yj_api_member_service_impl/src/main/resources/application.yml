@@ -19,7 +19,7 @@ spring:
         log-base-name: yj_parents_atomiks_cj01
   datasource:
     dbcj:
-      url: jdbc:mysql://localhost:3306/yj_302_1_cj
+      url: jdbc:mysql://localhost:3306/yj_cj
       user: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver
@@ -60,7 +60,7 @@ spring:
         log-base-name: yj_parents_atomiks_cj02
   datasource:
     dbcj:
-      url: jdbc:mysql://localhost:3306/yj_302_1_cj
+      url: jdbc:mysql://localhost:3306/yj_cj
       user: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver

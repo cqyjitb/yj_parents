@@ -13,17 +13,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RefreshScope
+@RefreshScope   //支持nacos的动态刷新功能
 @Api(value="ConfigController",tags={"Swagger配置操作接口"})
 public class ConfigController {
+    @Value("${config.info}")
+    private String configInfo;
 
-    @Value("${user.name}")
-    private String username;
-    @ApiOperation(value = "获取配置",notes = "获取配置文件信息")
-    @RequestMapping(value = "/config",method = {RequestMethod.GET})
-    public String getConfig(){
-        System.out.println(username);
-        return "Hello " + username;
+    @ApiOperation(value = "获取配置", notes = "获取配置config info")
+    @RequestMapping(value = "/config/info",method = {RequestMethod.GET})
+    public String getConfigInfo(){
+        return configInfo;
     }
 
 }
