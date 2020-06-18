@@ -26,7 +26,7 @@ public class SwaggerConfig {
     }
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Swagger API")
+                .title("YJCloud平台开发接口文档")
                 .description("用户相关接口")
                 .termsOfServiceUrl("")
                 .contact(new Contact("wd", "", ""))

@@ -1,6 +1,7 @@
 package com.yj.cj.equpt.controller;
 
-import com.yj.cj.equpt.service.IEquptService;
+
+import com.yj.api.service.IEquptService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Api("设备相关接口")
+@Api(value="EquptController",tags={"设备操作接口"})
 public class EquptController {
     @Autowired
     private IEquptService equptService;

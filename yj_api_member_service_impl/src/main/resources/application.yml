@@ -1,5 +1,6 @@
+---
 server:
-  port: 8000
+  port: 9500
 #eureka:
 #  client:
 #    service-url:
@@ -7,6 +8,7 @@ server:
 #    register-with-eureka: true
 #    fetch-registry: true
 spring:
+  profiles: peer1
   cloud:
     nacos:
       discovery:
@@ -14,10 +16,10 @@ spring:
   jta:
     atomikos:
       properties:
-        log-base-name: yj_parents_atomiks_cj
+        log-base-name: yj_parents_atomiks_cj01
   datasource:
     dbcj:
-      url: jdbc:mysql://localhost:3306/yj_cj
+      url: jdbc:mysql://localhost:3306/yj_302_1_cj
       user: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver
@@ -29,6 +31,52 @@ spring:
       maxPoolSize: 25
       minPoolSize: 3
       uniqueResourceName: dbCjDatasource
-
   application:
     name: app-yj-member
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    discovery-client-enabled: false
+  sleuth:
+    sampler:
+      probability: 1.0
+---
+server:
+  port: 9501
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8200/eureka/
+#    register-with-eureka: true
+#    fetch-registry: true
+spring:
+  profiles: peer2
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  jta:
+    atomikos:
+      properties:
+        log-base-name: yj_parents_atomiks_cj02
+  datasource:
+    dbcj:
+      url: jdbc:mysql://localhost:3306/yj_302_1_cj
+      user: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
+      maxLifeTime: 20000
+      maxPoolSize: 25
+      minPoolSize: 3
+      uniqueResourceName: dbCjDatasource
+  application:
+    name: app-yj-member
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    discovery-client-enabled: false
+  sleuth:
+    sampler:
+      probability: 1.0

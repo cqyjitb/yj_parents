@@ -99,3 +99,5 @@ ribbon:
 feign:
   hystrix:
     enabled: true
+logging:
+  config: classpath:logback-test.xml
