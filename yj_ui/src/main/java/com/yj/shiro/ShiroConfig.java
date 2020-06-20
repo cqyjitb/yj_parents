@@ -32,10 +32,12 @@ public class ShiroConfig  {
          *  role
          */
         Map<String,String> filterMap = new LinkedHashMap<String,String>();
-        filterMap.put("/login","anon");
-        filterMap.put("/toLogin","anon");
-        filterMap.put("/**","authc");
-        filterMap.put("/index","authc");
+          filterMap.put("/**","anon");
+//        filterMap.put("/login","anon");
+//        filterMap.put("/toLogin","anon");
+//        filterMap.put("/getPort","anon");
+//        filterMap.put("/**","authc");
+//        filterMap.put("/index","authc");
         shiroFilterFactoryBean.setLoginUrl("/toLogin");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);
         return shiroFilterFactoryBean;

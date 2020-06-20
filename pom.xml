@@ -15,6 +15,8 @@
         <module>yj_common</module>
         <module>yj_ui</module>
         <module>yj_gateway</module>
+        <module>api_user_service</module>
+        <module>yj_api_user_service_impl</module>
     </modules>
 
     <parent>
@@ -82,18 +84,6 @@
             <version>1.18.12</version>
         </dependency>
 
-        <!--全局排除spring-boot-starter-logging内的所有依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-logging</artifactId>
-            <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>*</groupId>-->
-                    <!--<artifactId>*</artifactId>-->
-                <!--</exclusion>-->
-            <!--</exclusions>-->
-        </dependency>
-
         <!-- 链路追踪 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -108,16 +98,16 @@
             <version>2.2.2.RELEASE</version>
         </dependency>
 
-
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-devtools</artifactId>-->
-        <!--</dependency>-->
-
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.70</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>4.11</version>
         </dependency>
     </dependencies>
     <build>

@@ -14,6 +14,7 @@
     <modules>
         <module>api_core_service</module>
         <module>api_member_service</module>
+        <module>api_user_service</module>
     </modules>
 
 

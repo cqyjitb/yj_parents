@@ -3,6 +3,12 @@ server:
   port: 7000
 spring:
   profiles: peer1
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    discovery-client-enabled: false #zipkin server
+  sleuth:
+    sampler:
+      probability: 1.0 #采样百分比
   application:
     name: api-gateway
   cloud:
@@ -19,11 +25,16 @@ spring:
         uri: lb://app-yj-member
         predicates:
         - Path=/app-yj-member/**
+      - id: app-yj-ui
+        uri: lb://app-yj-ui
+        predicates:
+        - Path=/app-yj-ui/**
       #开启服务名发现，根据服务名转发，实现负载均衡
       discovery:
         locator:
           enabled: true
-
+logging:
+  config: classpath:logback-test1.xml
 
 #----------------------------------------
 ---
@@ -31,6 +42,12 @@ server:
   port: 7001
 spring:
   profiles: peer2
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    discovery-client-enabled: false #zipkin server
+  sleuth:
+    sampler:
+      probability: 1.0 #采样百分比
   application:
     name: api-gateway
   cloud:
@@ -47,7 +64,12 @@ spring:
         uri: lb://app-yj-member
         predicates:
         - Path=/app-yj-member/**
+      - id: app-yj-ui
+        uri: lb://app-yj-ui
+        predicates:
+        - Path=/app-yj-ui/**
       discovery:
         locator:
           enabled: true
-
+logging:
+  config: classpath:logback-test2.xml

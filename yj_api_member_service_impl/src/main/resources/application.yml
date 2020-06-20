@@ -9,6 +9,12 @@ server:
 #    fetch-registry: true
 spring:
   profiles: peer1
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    discovery-client-enabled: false #zipkin server
+  sleuth:
+    sampler:
+      probability: 1.0 #采样百分比
   cloud:
     nacos:
       discovery:
@@ -19,7 +25,7 @@ spring:
         log-base-name: yj_parents_atomiks_cj01
   datasource:
     dbcj:
-      url: jdbc:mysql://localhost:3306/yj_cj
+      url: jdbc:mysql://localhost:3306/yj_302_1_cj
       user: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver
@@ -33,12 +39,8 @@ spring:
       uniqueResourceName: dbCjDatasource
   application:
     name: app-yj-member
-  zipkin:
-    base-url: http://127.0.0.1:9411
-    discovery-client-enabled: false
-  sleuth:
-    sampler:
-      probability: 1.0
+logging:
+  config: classpath:logback-test1.xml
 ---
 server:
   port: 9501
@@ -50,6 +52,12 @@ server:
 #    fetch-registry: true
 spring:
   profiles: peer2
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    discovery-client-enabled: false #zipkin server
+  sleuth:
+    sampler:
+      probability: 1.0 #采样百分比
   cloud:
     nacos:
       discovery:
@@ -60,7 +68,7 @@ spring:
         log-base-name: yj_parents_atomiks_cj02
   datasource:
     dbcj:
-      url: jdbc:mysql://localhost:3306/yj_cj
+      url: jdbc:mysql://localhost:3306/yj_302_1_cj
       user: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver
@@ -74,9 +82,5 @@ spring:
       uniqueResourceName: dbCjDatasource
   application:
     name: app-yj-member
-  zipkin:
-    base-url: http://127.0.0.1:9411
-    discovery-client-enabled: false
-  sleuth:
-    sampler:
-      probability: 1.0
+logging:
+  config: classpath:logback-test2.xml

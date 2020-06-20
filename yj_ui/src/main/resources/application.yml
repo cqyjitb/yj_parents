@@ -10,6 +10,12 @@ server:
 #    register-with-eureka: true
 #    fetch-registry: true
 spring:
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    discovery-client-enabled: false #zipkin server
+  sleuth:
+    sampler:
+      probability: 1.0 #采样百分比
   cloud:
     nacos:
       discovery:
@@ -21,9 +27,14 @@ spring:
     cache: false
   application:
     name: app-yj-ui
-#ribbon:
-#  ReadTimeout:  5000
-#  ConnectTimeout: 5000
-#feign:
-#  hystrix:
-#    enabled: true
+logging:
+  config: classpath:logback-test1.xml
+ribbon:
+  ReadTimeout:  5000
+  ConnectTimeout: 5000
+feign:
+  hystrix:
+    enabled: true
+gateway:
+  ip: 127.0.0.1
+  port: 7000
