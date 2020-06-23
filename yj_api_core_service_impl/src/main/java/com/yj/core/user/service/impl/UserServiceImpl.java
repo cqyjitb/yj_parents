@@ -1,9 +1,10 @@
 package com.yj.core.user.service.impl;
 
-import com.yj.api.service.IUserService;
+import com.yj.core.api.service.IUserService;
 import com.yj.core.user.mapper.UserMapper;
 import com.yj.utils.JsonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -20,4 +21,17 @@ public class UserServiceImpl implements IUserService {
             return JsonUtil.getJson(userMapper.getUserInfo(username));
         }
     }
+
+
+
+    @Value("${server.port}")
+    private String port;
+    @Value("${spring.application.name}")
+    private String appname;
+    @Override
+    public String getApiInfo() {
+        return "端口："+port+"appname:"+appname;
+    }
+
+
 }

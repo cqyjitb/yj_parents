@@ -1,6 +1,6 @@
 package com.yj.core.user.controller;
 
-import com.yj.api.service.IUserService;
+import com.yj.core.api.service.IUserService;
 import com.yj.core.user.feign.IEquptServiceFeign;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Api(value="用户controller",tags={"用户操作接口"})
-@SwaggerDefinition
+//@SwaggerDefinition
 public class UserController {
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
     @Value("${server.port}")
@@ -44,10 +44,8 @@ public class UserController {
     }
 
     @ApiOperation(value = "获取端口",notes = "获取服务所在端口")
-    @RequestMapping(value = "/getPort",method = {RequestMethod.GET})
+    @RequestMapping(value = "/getApiInfo",method = {RequestMethod.GET})
     public String getPort(){
-        Integer eqptId = 1;
-        String eqptinfo = equptServiceFeign.getEquptInfo(eqptId);
-        return "这是端口："+ port + "" + "设备为：" + eqptinfo;
+        return userService.getApiInfo() ;
     }
 }

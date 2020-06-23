@@ -47,11 +47,13 @@ spring:
 ribbon:
   ReadTimeout:  5000
   ConnectTimeout: 5000
-feign:
-  hystrix:
-    enabled: true
+#feign:
+#  hystrix:
+#    enabled: true
 logging:
-  config: classpath:logback-test1.xml
+  level:
+    com.yj.core.user.feign.IEquptServiceFeign: debug
+#  config: classpath:logback-test1.xml
 ---
 server:
   port: 9001
@@ -98,11 +100,11 @@ spring:
   application:
     name: app-yj-core
 #springcloud feign 默认开启支持ribbon
-ribbon:
-  ReadTimeout:  5000
-  ConnectTimeout: 5000
+#ribbon:
+#  ReadTimeout:  5000
+#  ConnectTimeout: 5000
 feign:
   hystrix:
     enabled: true
-logging:
-  config: classpath:logback-test2.xml
+#logging:
+#  config: classpath:logback-test2.xml

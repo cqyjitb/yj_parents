@@ -39,8 +39,8 @@ spring:
       uniqueResourceName: dbCjDatasource
   application:
     name: app-yj-member
-logging:
-  config: classpath:logback-test1.xml
+#logging:
+#  config: classpath:logback-test1.xml
 ---
 server:
   port: 9501
@@ -82,5 +82,5 @@ spring:
       uniqueResourceName: dbCjDatasource
   application:
     name: app-yj-member
-logging:
-  config: classpath:logback-test2.xml
+#logging:
+#  config: classpath:logback-test2.xml

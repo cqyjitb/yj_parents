@@ -9,15 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>yj_api_service</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>api_core_service</module>
-        <module>api_member_service</module>
-        <module>api_user_service</module>
-        <module>api_ui_service</module>
-        <module>api_auth_service</module>
-    </modules>
+    <artifactId>api_ui_service</artifactId>
 
 
 </project>

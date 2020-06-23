@@ -1,14 +1,5 @@
 server:
   port: 8080
-#eureka:
-#  instance:
-#    lease-renewal-interval-in-seconds: 4 #每隔这个时间会主动心跳一次 默认值为30s，更新自己的状态
-#    lease-expiration-duration-in-seconds: 12 #设置服务过期时间配置,超过这个时间没有接收到心跳EurekaServer就会将这个实例剔除
-#  client:
-#    service-url:
-#      defaultZone: http://127.0.0.1:8200/eureka/
-#    register-with-eureka: true
-#    fetch-registry: true
 spring:
   zipkin:
     base-url: http://127.0.0.1:9411
@@ -27,14 +18,15 @@ spring:
     cache: false
   application:
     name: app-yj-ui
-logging:
-  config: classpath:logback-test1.xml
 ribbon:
   ReadTimeout:  5000
   ConnectTimeout: 5000
-feign:
-  hystrix:
-    enabled: true
+#feign:
+#  hystrix:
+#    enabled: true
 gateway:
   ip: 127.0.0.1
   port: 7000
+logging:
+  level:
+    com.yj.ui.feign.IUserServiceFeign: debug

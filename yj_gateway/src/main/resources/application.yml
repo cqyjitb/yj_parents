@@ -33,8 +33,8 @@ spring:
       discovery:
         locator:
           enabled: true
-logging:
-  config: classpath:logback-test1.xml
+#logging:
+#  config: classpath:logback-test1.xml
 
 #----------------------------------------
 ---
@@ -71,5 +71,5 @@ spring:
       discovery:
         locator:
           enabled: true
-logging:
-  config: classpath:logback-test2.xml
+#logging:
+#  config: classpath:logback-test2.xml
