@@ -17,6 +17,7 @@
         <module>yj_gateway</module>
         <module>yj_api_user_service_impl</module>
         <module>yj_pojo</module>
+        <module>yj_api_auth_service_impl</module>
     </modules>
 
     <parent>

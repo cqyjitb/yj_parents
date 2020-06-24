@@ -16,7 +16,7 @@
         </dependency>
         <dependency>
             <groupId>com.yj</groupId>
-            <artifactId>api_core_service</artifactId>
+            <artifactId>api_user_service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>

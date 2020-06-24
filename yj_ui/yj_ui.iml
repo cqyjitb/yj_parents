@@ -17,7 +17,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="api_ui_service" />
-    <orderEntry type="module" module-name="api_core_service" />
+    <orderEntry type="module" module-name="api_user_service" />
     <orderEntry type="module" module-name="yj_common" />
     <orderEntry type="module" module-name="api_member_service" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.3.0.M4" level="project" />

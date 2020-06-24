@@ -7,6 +7,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.SwaggerDefinition;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -36,36 +37,21 @@ public class UserController {
 //    }
 //
 //
-//    @RequestMapping("/login")
-//    public String login(String username,String password,Model model){
-//        if(username == null){
-//            model.addAttribute("msg","用户名不能为空");
-//            return "login";
-//        }
-//
-//        if(password == null){
-//            model.addAttribute("msg","用户密码不能为空");
-//            return "login";
-//        }
-//        /**
-//         * 认证
-//         */
-//        Subject subject = SecurityUtils.getSubject();
-//        UsernamePasswordToken token = new UsernamePasswordToken(username,password);
-//        String userInfo = userServiceFeign.getUserInfo(token.getUsername());
-//        try{
-//            subject.login(token);
-//            model.addAttribute("msg","欢迎光临");
-//            return "redirect:/index";
-//        }catch (UnknownAccountException e){
-//            model.addAttribute("msg","用户名不存在");
-//            return "login";
-//        }catch (IncorrectCredentialsException e){
-//            model.addAttribute("msg","密码错误");
-//            return "login";
-//        }
-//
-//    }
+    @RequestMapping("/login")
+    public String login(String username,String password,Model model){
+        if(username == null){
+            model.addAttribute("msg","用户名不能为空");
+            return "login";
+        }
+
+        if(password == null){
+            model.addAttribute("msg","用户密码不能为空");
+            return "login";
+        }
+
+        return "redirect:/index";
+
+    }
     @Autowired
     private IUserServiceFeign iUserServiceFeign;
     @Autowired

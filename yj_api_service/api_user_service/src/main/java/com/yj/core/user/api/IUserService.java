@@ -12,4 +12,8 @@ public interface IUserService {
     public String getUserByName(String name);
 
 
+    @RequestMapping(value = "/getUserList",method = {RequestMethod.GET})
+    public String getUserList();
+
+
 }
