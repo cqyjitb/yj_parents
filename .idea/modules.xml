@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/yj_api_service/api_auth_service/api_auth_service.iml" filepath="$PROJECT_DIR$/yj_api_service/api_auth_service/api_auth_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_api_service/api_authc_service.iml" filepath="$PROJECT_DIR$/yj_api_service/api_authc_service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/yj_api_service/api_core_service/api_core_service.iml" filepath="$PROJECT_DIR$/yj_api_service/api_core_service/api_core_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_api_service/api_member_service/api_member_service.iml" filepath="$PROJECT_DIR$/yj_api_service/api_member_service/api_member_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yj_api_service/api_ui_service/api_ui_service.iml" filepath="$PROJECT_DIR$/yj_api_service/api_ui_service/api_ui_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_api_service/api_user_service/api_user_service.iml" filepath="$PROJECT_DIR$/yj_api_service/api_user_service/api_user_service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/yj_api_core_service_impl/yj_api_core_service_impl.iml" filepath="$PROJECT_DIR$/yj_api_core_service_impl/yj_api_core_service_impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yj_api_auth_service_impl/yj_api_auth_service_impl.iml" filepath="$PROJECT_DIR$/yj_api_auth_service_impl/yj_api_auth_service_impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_api_member_service_impl/yj_api_member_service_impl.iml" filepath="$PROJECT_DIR$/yj_api_member_service_impl/yj_api_member_service_impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_api_service/yj_api_service.iml" filepath="$PROJECT_DIR$/yj_api_service/yj_api_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_api_user_service_impl/yj_api_user_service_impl.iml" filepath="$PROJECT_DIR$/yj_api_user_service_impl/yj_api_user_service_impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_common/yj_common.iml" filepath="$PROJECT_DIR$/yj_common/yj_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_gateway/yj_gateway.iml" filepath="$PROJECT_DIR$/yj_gateway/yj_gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_parents.iml" filepath="$PROJECT_DIR$/yj_parents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yj_pojo/yj_pojo.iml" filepath="$PROJECT_DIR$/yj_pojo/yj_pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/yj_ui/yj_ui.iml" filepath="$PROJECT_DIR$/yj_ui/yj_ui.iml" />
     </modules>
   </component>

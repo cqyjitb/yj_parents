@@ -1,0 +1,16 @@
+2020-06-22 09:43:25.068 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[app-yj-member] & group[DEFAULT_GROUP]
+2020-06-22 09:43:25.073 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[app-yj-member.properties] & group[DEFAULT_GROUP]
+2020-06-22 09:43:25.076 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[app-yj-member-peer2.properties] & group[DEFAULT_GROUP]
+2020-06-22 09:43:27.121 [main] WARN  o.s.cloud.sleuth.zipkin2.ZipkinAutoConfiguration - Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@4dcbae55}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: [Empty JSON_V2 message]}]
+2020-06-22 09:43:28.001 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-06-22 09:43:28.005 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-06-22 09:43:28.648 [main] WARN  com.atomikos.icatch.provider.imp.AssemblerImp - Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+2020-06-22 09:43:58.963 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[app-yj-member] & group[DEFAULT_GROUP]
+2020-06-22 09:43:58.969 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[app-yj-member.properties] & group[DEFAULT_GROUP]
+2020-06-22 09:43:58.975 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[app-yj-member-peer1.properties] & group[DEFAULT_GROUP]
+2020-06-22 09:44:01.022 [main] WARN  o.s.cloud.sleuth.zipkin2.ZipkinAutoConfiguration - Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@41f4039e}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: [Empty JSON_V2 message]}]
+2020-06-22 09:44:01.909 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-06-22 09:44:01.913 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-06-22 09:44:02.518 [main] WARN  com.atomikos.icatch.provider.imp.AssemblerImp - Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice

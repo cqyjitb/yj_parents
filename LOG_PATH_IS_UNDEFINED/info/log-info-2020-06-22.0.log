@@ -1,0 +1,120 @@
+2020-06-22 09:43:25.012 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\917110140\nacos\config
+2020-06-22 09:43:25.037 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2020-06-22 09:43:25.077 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-app-yj-member-peer2.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-app-yj-member.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-app-yj-member,DEFAULT_GROUP'}]
+2020-06-22 09:43:25.124 [main] INFO  com.yj.AppMember - The following profiles are active: peer2
+2020-06-22 09:43:26.087 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=10e29687-4157-360a-af3c-3512c39de0aa
+2020-06-22 09:43:26.671 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9501 (http)
+2020-06-22 09:43:26.680 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9501"]
+2020-06-22 09:43:26.680 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-22 09:43:26.680 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-22 09:43:26.920 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-22 09:43:26.920 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1760 ms
+2020-06-22 09:43:27.968 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-22 09:43:28.001 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-22 09:43:28.005 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-22 09:43:28.149 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-22 09:43:28.403 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-06-22 09:43:28.421 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2020-06-22 09:43:28.422 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+2020-06-22 09:43:28.422 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2020-06-22 09:43:28.645 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - Loaded jar:file:/C:/Users/917110140/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2020-06-22 09:43:28.653 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2020-06-22 09:43:28.653 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.allow_subtransactions = true
+2020-06-22 09:43:28.653 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.recovery_delay = 10000
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.automatic_resource_registration = true
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.oltp_max_retries = 5
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.client_demarcation = false
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.threaded_2pc = false
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.serial_jta_transactions = true
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.log_base_dir = F:\yj_parents\transaction-logs
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.rmi_export_class = none
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.max_actives = 50
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.checkpoint_interval = 500
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.enable_logging = true
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.log_base_name = yj_parents_atomiks_cj02
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.max_timeout = 300000
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.trust_client_tm = false
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.tm_unique_name = 172.18.18.7.tm
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: java.naming.provider.url = rmi://localhost:1099
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2020-06-22 09:43:28.654 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.default_jta_timeout = 10000
+2020-06-22 09:43:28.655 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - Using default (local) logging and recovery...
+2020-06-22 09:43:28.726 [main] INFO  com.atomikos.datasource.xa.XATransactionalResource - dbCjDatasource: refreshed XAResource
+2020-06-22 09:43:29.157 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-06-22 09:43:29.176 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-06-22 09:43:29.203 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-06-22 09:43:29.284 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9501"]
+2020-06-22 09:43:29.304 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9501 (http) with context path ''
+2020-06-22 09:43:29.307 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"172.18.18.7","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9501,"scheduled":false,"serviceName":"DEFAULT_GROUP@@app-yj-member","stopped":false,"weight":1.0} to beat map.
+2020-06-22 09:43:29.372 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@app-yj-member with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"172.18.18.7","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9501,"weight":1.0}
+2020-06-22 09:43:29.383 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP app-yj-member 172.18.18.7:9501 register finished
+2020-06-22 09:43:29.434 [main] INFO  com.yj.AppMember - Started AppMember in 5.918 seconds (JVM running for 6.71)
+2020-06-22 09:43:29.438 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] app-yj-member.properties+DEFAULT_GROUP
+2020-06-22 09:43:29.438 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=app-yj-member.properties, group=DEFAULT_GROUP, cnt=1
+2020-06-22 09:43:29.438 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] app-yj-member-peer2.properties+DEFAULT_GROUP
+2020-06-22 09:43:29.438 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=app-yj-member-peer2.properties, group=DEFAULT_GROUP, cnt=1
+2020-06-22 09:43:29.439 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] app-yj-member+DEFAULT_GROUP
+2020-06-22 09:43:29.439 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=app-yj-member, group=DEFAULT_GROUP, cnt=1
+2020-06-22 09:43:58.911 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\917110140\nacos\config
+2020-06-22 09:43:58.936 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2020-06-22 09:43:58.976 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-app-yj-member-peer1.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-app-yj-member.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-app-yj-member,DEFAULT_GROUP'}]
+2020-06-22 09:43:59.026 [main] INFO  com.yj.AppMember - The following profiles are active: peer1
+2020-06-22 09:43:59.996 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=10e29687-4157-360a-af3c-3512c39de0aa
+2020-06-22 09:44:00.590 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9500 (http)
+2020-06-22 09:44:00.598 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9500"]
+2020-06-22 09:44:00.599 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-22 09:44:00.599 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-06-22 09:44:00.810 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-22 09:44:00.810 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1765 ms
+2020-06-22 09:44:01.875 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-22 09:44:01.909 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-22 09:44:01.914 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-22 09:44:02.045 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-22 09:44:02.272 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-06-22 09:44:02.290 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2020-06-22 09:44:02.291 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+2020-06-22 09:44:02.291 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2020-06-22 09:44:02.515 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - Loaded jar:file:/C:/Users/917110140/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.allow_subtransactions = true
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.recovery_delay = 10000
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.automatic_resource_registration = true
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.oltp_max_retries = 5
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.client_demarcation = false
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.threaded_2pc = false
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.serial_jta_transactions = true
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.log_base_dir = F:\yj_parents\transaction-logs
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.rmi_export_class = none
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.max_actives = 50
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.checkpoint_interval = 500
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.enable_logging = true
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.log_base_name = yj_parents_atomiks_cj01
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.max_timeout = 300000
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.trust_client_tm = false
+2020-06-22 09:44:02.523 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2020-06-22 09:44:02.524 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.tm_unique_name = 172.18.18.7.tm
+2020-06-22 09:44:02.524 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2020-06-22 09:44:02.524 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2020-06-22 09:44:02.524 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: java.naming.provider.url = rmi://localhost:1099
+2020-06-22 09:44:02.524 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2020-06-22 09:44:02.524 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.default_jta_timeout = 10000
+2020-06-22 09:44:02.524 [main] INFO  com.atomikos.icatch.provider.imp.AssemblerImp - Using default (local) logging and recovery...
+2020-06-22 09:44:02.571 [main] INFO  com.atomikos.datasource.xa.XATransactionalResource - dbCjDatasource: refreshed XAResource
+2020-06-22 09:44:03.043 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-06-22 09:44:03.059 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-06-22 09:44:03.086 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-06-22 09:44:03.175 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9500"]
+2020-06-22 09:44:03.195 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9500 (http) with context path ''
+2020-06-22 09:44:03.198 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"172.18.18.7","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":9500,"scheduled":false,"serviceName":"DEFAULT_GROUP@@app-yj-member","stopped":false,"weight":1.0} to beat map.
+2020-06-22 09:44:03.264 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@app-yj-member with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"172.18.18.7","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":9500,"weight":1.0}
+2020-06-22 09:44:03.274 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP app-yj-member 172.18.18.7:9500 register finished
+2020-06-22 09:44:03.321 [main] INFO  com.yj.AppMember - Started AppMember in 5.734 seconds (JVM running for 6.612)
+2020-06-22 09:44:03.324 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] app-yj-member-peer1.properties+DEFAULT_GROUP
+2020-06-22 09:44:03.324 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=app-yj-member-peer1.properties, group=DEFAULT_GROUP, cnt=1
+2020-06-22 09:44:03.325 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] app-yj-member.properties+DEFAULT_GROUP
+2020-06-22 09:44:03.325 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=app-yj-member.properties, group=DEFAULT_GROUP, cnt=1
+2020-06-22 09:44:03.325 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] app-yj-member+DEFAULT_GROUP
+2020-06-22 09:44:03.325 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=app-yj-member, group=DEFAULT_GROUP, cnt=1

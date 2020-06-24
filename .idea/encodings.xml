@@ -2,15 +2,19 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yj_api_auth_service_impl" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_api_core_service_impl" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_api_member_service_impl" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_api_service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yj_api_service/api_auth_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_api_service/api_core_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_api_service/api_member_service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yj_api_service/api_ui_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_api_service/api_user_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_api_user_service_impl" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yj_pojo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yj_ui" charset="UTF-8" />
   </component>
 </project>
